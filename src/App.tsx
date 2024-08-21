@@ -1,4 +1,4 @@
-import { BrowserRouter as HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar.tsx';
 import Home from './pages/Home.tsx';
 import Team from './pages/Team.tsx';
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <body className='box-border bg-carbonets-dark min-h-[100vh]'>
-        <HashRouter>
+        <BrowserRouter basename='/'>
           <Navbar/>
           <Routes>
             <Route path='/' element={<Home/>} />
@@ -30,7 +30,7 @@ function App() {
             <Route path='*' element={<NotFound/>} />
           </Routes>
           <Footer/>
-        </HashRouter>
+        </BrowserRouter>
       </body>
     </>
   )
