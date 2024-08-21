@@ -1,4 +1,3 @@
-import React from 'react'
 import carbonLogo from '../assets/carbonets.png'
 import ets from '../assets/ets.svg'
 import {FaFacebook, FaInstagram, FaYoutube, FaGithub, FaLinkedin} from 'react-icons/fa'
