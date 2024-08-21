@@ -1,4 +1,3 @@
-import React from 'react'
 import PartnerTier from '../components/PartnerTier'
 import PartnerSection from '../components/PartnerSection'
 import Partner from '../components/Partner'

@@ -1,6 +1,4 @@
-import React from 'react'
 import Member from '../components/Member'
-import DanielDanaieImage from '../assets/members/DanielDanaie.jpg'
 
 const Team = () => {
   return (
