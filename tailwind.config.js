@@ -10,9 +10,9 @@ export default {
     },
     extend: {
       colors: {
-        'dronolab-dark': '#3b3a3c',
-        'dronolab-green': '#7ba62b',
-        'dronolab-accent': '#9be812',
+        'carbonets-dark': '#303131',
+        'carbonets-green': '#50E59D',
+        'carbonets-blue': '#48CEFF',
       },
     },
   },

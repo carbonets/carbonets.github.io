@@ -36,7 +36,7 @@ const Member: React.FC<MemberProps> = ({ role, name, concentration, imageSrc, li
   );
 
   return (
-    <div className="text-dronolab-dark flex flex-col w-[235px] shadow-lg rounded-xl overflow-hidden">
+    <div className="text-carbonets-dark flex flex-col w-[235px] shadow-lg rounded-xl overflow-hidden">
       {imageContent}
       <div className="bg-white font-montserrat p-2 h-[85px]">
         <p className="text-[0.95rem]">{role}</p>
