@@ -15,24 +15,22 @@ import './App.css'
 function App() {
 
   return (
-    <>
-      <body className='box-border bg-carbonets-dark min-h-[100vh]'>
-        <BrowserRouter basename='/'>
-          <Navbar/>
-          <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/team' element={<Team/>} />
-            <Route path='/join' element={<Join/>} />
-            <Route path='/roadmap' element={<Roadmap/>} />
-            <Route path='/competitions' element={<Competitions/>} />
-            <Route path='/partners' element={<Partners/>} />
-            <Route path='/404' element={<NotFound/>} />
-            <Route path='*' element={<NotFound/>} />
-          </Routes>
-          <Footer/>
-        </BrowserRouter>
-      </body>
-    </>
+    <body className='box-border bg-carbonets-dark min-h-[100vh]'>
+      <BrowserRouter basename='/'>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/team' element={<Team/>} />
+          <Route path='/join' element={<Join/>} />
+          <Route path='/roadmap' element={<Roadmap/>} />
+          <Route path='/competitions' element={<Competitions/>} />
+          <Route path='/partners' element={<Partners/>} />
+          <Route path='/404' element={<NotFound/>} />
+          <Route path='*' element={<NotFound/>} />
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </body>
   )
 }
 

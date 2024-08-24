@@ -23,22 +23,19 @@ const concentrationMap: Record<Concentration, string> = {
 const Member: React.FC<MemberProps> = ({ role, name, concentration, imageSrc, linkedin }) => {
   const concentrationText = concentrationMap[concentration] || 'unknown concentration';
 
-  const imageContent = (
-    <div className="w-full">
-      {linkedin && linkedin !== "" ? (
-        <a href={linkedin} target="_blank" rel="noopener noreferrer">
-          <img src={imageSrc} alt={name} className="w-full cursor-pointer" />
-        </a>
-      ) : (
-        <img src={imageSrc} alt={name} className="w-full" />
-      )}
-    </div>
-  );
+  const imageContent = 
+    (linkedin && linkedin !== "") ? 
+      <a href={linkedin} target="_blank" rel="noopener noreferrer">
+        <img src={imageSrc} alt={name} className="cursor-pointer" />
+      </a>
+     : 
+      <img src={imageSrc} alt={name} />
+    ;
 
   return (
-    <div className="text-carbonets-dark flex flex-col w-[235px] shadow-lg rounded-xl overflow-hidden">
+    <div className="text-carbonets-dark rounded-xl w-[235px] overflow-hidden">
       {imageContent}
-      <div className="bg-white font-montserrat p-2 h-[85px]">
+      <div className="bg-white font-montserrat p-2">
         <p className="text-[0.95rem]">{role}</p>
         <p className="font-bold tracking-wide">{name}</p>
         <p className="text-[0.8rem]">{concentrationText}</p>

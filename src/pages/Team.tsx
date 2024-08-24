@@ -1,18 +1,39 @@
 import Member from '../components/Member'
+import Teaser from '../components/Teaser'
 
 const Team = () => {
   return (
-    <div className='flex flex-col'>
-      <div className='mb-4 text-center text-white mx-auto m-4 max-w-[500px]'>
-        Our team stands out for its rich diversity of skills embodying the spirit of ÉTS. We combine ambition, meticulous know-how and passion in every detail of our carbon capturing units.
+    <div className='flex flex-col justify-center mx-auto font-montserrat max-w-[750px]'>
+      <div className='font-montserrat text-[8rem] font-bold text-white text-center mb-4'>
+        THE TEAM
       </div>
-      <div className='grid grid-cols-4 gap-4 m-4 justify-items-center mx-auto max-w-[1000px]'>
-        <Member 
-          role="Captain" 
-          name="Daniel Danaie" 
-          concentration="ele" 
-          imageSrc="src\assets\members\DanielDanaie.jpg"
-          linkedin="https://www.linkedin.com/in/danieldanaie/"
+      <div className='flex space-x-8 mb-4 justify-center'>
+        <div className='place-content-center'>
+          <Member 
+            role="Captain" 
+            name="Daniel Danaie" 
+            concentration="ele" 
+            imageSrc="src\assets\members\DanielDanaie.png"
+            linkedin="https://www.linkedin.com/in/danieldanaie/"
+          />
+        </div>
+        <div className='text-white text-[3.5rem] font-bold place-content-center'>
+          All by myself,<br/>don't want to be<br/>all by myself,<br/>anymore...
+        </div>
+      </div>
+      <div className='flex text-[1.5rem] font-semibold text-center'>
+        <p>
+          <span className='text-carbonets-blue'>But seriously, </span>
+          <span className='text-carbonets-green'>can you join me?</span>
+        </p>
+      </div>
+      <div>
+        <Teaser
+          right={false}
+          title='The world needs you and so do we'
+          paragraph=''
+          imageSrc='src\assets\members\DanielDanaie.png'
+          alt='Me'
         />
       </div>
     </div>
