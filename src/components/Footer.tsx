@@ -1,8 +1,12 @@
 import carbonLogo from '../assets/carbonets.png'
 import ets from '../assets/ets.svg'
 import {FaFacebook, FaInstagram, FaYoutube, FaGithub, FaLinkedin} from 'react-icons/fa'
+import { useTranslation } from 'react-i18next'
+import { Trans } from 'react-i18next'
 
 const Footer = () => {
+
+    const { t } = useTranslation();
   return (
     <>
         <div className='flex w-full max-w-[80rem] mx-auto justify-center text-white text-[0.85rem] font-[sans-serif] font-semibold mt-6'>
@@ -14,22 +18,19 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col'>
                     <a href='/' className='hover:text-carbonets-green'>
-                        Home
+                        {t("pageHome")}
                     </a>
                     <a href='/team' className='hover:text-carbonets-green'>
-                        Team
+                        {t("pageTeam")}
+                    </a>
+                    <a href='/prototype' className='hover:text-carbonets-green'>
+                        {t("pagePrototype")}
+                    </a>
+                    <a href='/competition' className='hover:text-carbonets-green'>
+                        {t("pageCompetition")}
                     </a>
                     <a href='/join' className='hover:text-carbonets-green'>
-                        Join
-                    </a>
-                    <a href='/roadmap' className='hover:text-carbonets-green'>
-                        Roadmap
-                    </a>
-                    <a href='/competitions' className='hover:text-carbonets-green'>
-                        Competitions
-                    </a>
-                    <a href='/partners' className='hover:text-carbonets-green'>
-                        Partners
+                        {t("pageJoin")}
                     </a>
                 </div>
             </div>
@@ -37,7 +38,9 @@ const Footer = () => {
                 <div className='flex flex-col'>
                     <div className='flex flex-col'>
                         <p className='my-2'>
-                            1219, Rue William,<br></br> Montréal, QC, H3C 1R1
+                            <Trans i18nKey="address">
+                                1219, Rue William,<br/> Montréal, QC, H3C 1R1
+                            </Trans>
                         </p>
                         <p className='my-2'>
                             438-808-0923
@@ -60,7 +63,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex w-full text-white text-[0.8rem] font-[sans-serif] justify-center mx-auto'>
-            Carbon ÉTS - ÉTS Carbon Removal Team © 2024 École de technologie supérieure
+            {t("footerText")}
         </div>
     </>
   )

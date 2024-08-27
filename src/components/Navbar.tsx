@@ -1,7 +1,10 @@
 import carbonLogo from '../assets/carbonets.png';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+
+  const { t, i18n } = useTranslation();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isEnglish, setIsEnglish] = useState(false);
@@ -11,6 +14,11 @@ const Navbar = () => {
   };
 
   const handleLanguage = () => {
+    if (isEnglish) {
+      i18n.changeLanguage('fr');
+    } else {
+      i18n.changeLanguage('en');
+    }
     setIsEnglish(!isEnglish);
   };
 
@@ -19,13 +27,10 @@ const Navbar = () => {
       <div className='flex w-full tracking-wide shadow-lg min-h-[4.5rem] max-w-[80rem] justify-center'>
         <div className='hidden navbar-size:flex gap-5 justify-end items-center flex-1'>
           <a href='/team' className='text-white hover:text-carbonets-green'>
-            Team
+            {t('pageTeam')}
           </a>
-          <a href='/join' className='text-white hover:text-carbonets-green'>
-            Join Us
-          </a>
-          <a href='/roadmap' className='text-white hover:text-carbonets-green'>
-            Roadmap
+          <a href='/prototype' className='text-white hover:text-carbonets-green'>
+            {t('pagePrototype')}
           </a>
         </div>
         <div className='flex flex-1 mx-4 navbar-size:justify-center items-center'>
@@ -34,11 +39,11 @@ const Navbar = () => {
           </a>
         </div>
         <div className='hidden navbar-size:flex gap-5 justify-start items-center flex-1'>
-          <a href='/competitions' className='text-white hover:text-carbonets-green'>
-            Competitions
+          <a href='/competition' className='text-white hover:text-carbonets-green'>
+            {t('pageCompetition')}
           </a>
-          <a href='/partners' className='text-white hover:text-carbonets-green'>
-            Partners
+          <a href='/join' className='text-white hover:text-carbonets-green'>
+            {t('pageJoin')}
           </a>
           <button onClick={handleLanguage} className='px-4 py-2 text-sm rounded-3xl font-bold border-2 border-carbonets-green opacity-90 bg-carbonets-green transition-all ease-in-out duration-300 hover:bg-transparent text-carbonets-dark hover:text-carbonets-green'>
             {isEnglish ? 'FR' : 'EN'}
@@ -61,19 +66,16 @@ const Navbar = () => {
       </div>
       <div className={`flex-col items-center gap-4 m-4 ${isMenuOpen ? 'flex' : 'hidden' }`}>
         <a href='/team' className='text-white hover:text-carbonets-green'>
-          Team
+          {t('pageTeam')}
+        </a>
+        <a href='/prototype' className='text-white hover:text-carbonets-green'>
+          {t('pagePrototype')}
+        </a>
+        <a href='/competition' className='text-white hover:text-carbonets-green'>
+          {t('pageCompetition')}
         </a>
         <a href='/join' className='text-white hover:text-carbonets-green'>
-          Join Us
-        </a>
-        <a href='/roadmap' className='text-white hover:text-carbonets-green'>
-          Roadmap
-        </a>
-        <a href='/competitions' className='text-white hover:text-carbonets-green'>
-          Competitions
-        </a>
-        <a href='/partners' className='text-white hover:text-carbonets-green'>
-          Partners
+          {t('pageJoin')}
         </a>
         <button onClick={() => {handleLanguage(); toggleMenu();}} className='px-4 py-2 text-sm rounded-3xl font-bold border-2 border-carbonets-green opacity-90 bg-carbonets-green transition-all ease-in-out duration-300 hover:bg-transparent text-carbonets-dark hover:text-carbonets-green'>
           {isEnglish ? 'FR' : 'EN'}
