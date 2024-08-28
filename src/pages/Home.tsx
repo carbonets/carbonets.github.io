@@ -8,9 +8,9 @@ const Home = () => {
     <div className='flex flex-col items-center mx-auto font-montserrat text-white font-bold mb-28'>
       <div className="relative w-full mb-16">
         <div className="absolute inset-0 flex flex-col md:flex-row gap-8 items-center justify-center text-center md:text-left max-w-[65rem] p-4 md:p-0 mb-4 z-10 left-1/2 transform -translate-x-1/2">
-          <img src="src/assets/carbonets.png" alt="solar" className="max-h-[25rem] max-w-[25rem] lg:max-w-[30rem] hidden md:block rounded-xl  p-4"/>
+          <img src="./src/assets/carbonets.png" alt="solar" className="max-h-[25rem] max-w-[25rem] lg:max-w-[30rem] hidden md:block rounded-xl  p-4"/>
           <div className="m-4 space-y-8">
-            <img src="src/assets/carbonets.png" alt="Carbon Removal Challenge presented by" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto p-4"/>
+            <img src="./src/assets/carbonets.png" alt="Carbon Removal Challenge presented by" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto p-4"/>
             <h2 className='text-[1.5rem] lg:text-[2rem] text-white'>{t('carbonetsDescription')}</h2>
           </div>
         </div>
