@@ -7,9 +7,10 @@ import { Trans } from 'react-i18next'
 const Footer = () => {
 
     const { t } = useTranslation();
+
     return (
         <>
-            <div className='flex flex-col md:flex-row w-full max-w-[60rem] mx-auto justify-center text-white text-[0.85rem] font-[sans-serif] font-semibold mt-6'>
+            <div className='flex flex-col md:flex-row w-full max-w-[60rem] mx-auto justify-center text-white text-[0.85rem] font-[sans-serif] font-semibold mb-4'>
                 <div className='flex flex-1 flex-col md:flex-row md:items-center'>
                     <div className='mb-4 md:mr-4 md:mb-0 hidden md:block'>
                         <a href='/'>

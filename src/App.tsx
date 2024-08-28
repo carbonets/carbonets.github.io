@@ -14,8 +14,8 @@ function App() {
 
   return (
     <body className='box-border bg-carbonets-dark min-h-[100vh]'>
+      <Navbar/>
       <BrowserRouter basename='/'>
-        <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/team' element={<Team/>} />
@@ -24,8 +24,8 @@ function App() {
           <Route path='/404' element={<NotFound/>} />
           <Route path='*' element={<NotFound/>} />
         </Routes>
-        <Footer/>
       </BrowserRouter>
+      <Footer/>
     </body>
   )
 }

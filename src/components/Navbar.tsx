@@ -7,19 +7,17 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isEnglish, setIsEnglish] = useState(false);
+  const [isEnglish, setIsEnglish] = useState(i18n.language === 'en');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleLanguage = () => {
-    if (isEnglish) {
-      i18n.changeLanguage('fr');
-    } else {
-      i18n.changeLanguage('en');
-    }
+    const newLanguage = isEnglish ? 'fr' : 'en';
+    i18n.changeLanguage(newLanguage);
     setIsEnglish(!isEnglish);
+    localStorage.setItem('language', newLanguage); // Save the new language to localStorage
   };
 
   return (
@@ -79,4 +77,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

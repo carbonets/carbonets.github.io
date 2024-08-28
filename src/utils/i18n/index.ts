@@ -4,9 +4,6 @@ import { initReactI18next } from "react-i18next";
 import enLang from './locales/en/en.json';
 import frLang from './locales/fr/fr.json';
 
-// the translations
-// (tip move them in a JSON file and import them,
-// or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
 const resources = {
   en: {
     translation: enLang,
@@ -16,18 +13,19 @@ const resources = {
   }
 };
 
+// Check localStorage for the saved language or use the default (e.g., 'fr')
+const savedLanguage = localStorage.getItem('language') || 'fr';
+
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next)
   .init({
     resources,
     fallbackLng: "en",
-    lng: "fr", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
-    // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
-    // if you're using a language detector, do not define the lng option
+    lng: savedLanguage, // Set the initial language based on localStorage
 
     interpolation: {
-      escapeValue: false // react already safes from xss
+      escapeValue: false, // react already safes from xss
     }
   });
 
-  export default i18n;
+export default i18n;
