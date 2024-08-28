@@ -1,5 +1,10 @@
 import { useTranslation, Trans } from 'react-i18next'
 import carbonetsLogo from '../assets/carbonets.png'
+import DACwBckg from '../assets/DACwBckg.png'
+import DACC from '../assets/DACC.png'
+import Milan from '../assets/Milan.jpg'
+import CRCLogoSquare from '../assets/CRCLogoSquare.jpg'
+import Earth from '../assets/Earth.png'
 
 const Home = () => {
 
@@ -9,21 +14,21 @@ const Home = () => {
     <div className='flex flex-col items-center mx-auto font-montserrat text-white font-bold mb-28'>
       <div className="relative w-full mb-16">
         <div className="absolute inset-0 flex flex-col md:flex-row gap-8 items-center justify-center text-center md:text-left max-w-[65rem] p-4 md:p-0 mb-4 z-10 left-1/2 transform -translate-x-1/2">
-          <img src={carbonetsLogo} alt="solar" className="max-h-[25rem] max-w-[25rem] lg:max-w-[30rem] hidden md:block rounded-xl  p-4"/>
+          <img src={carbonetsLogo} alt="CarbonETS Logo" className="max-h-[25rem] max-w-[25rem] lg:max-w-[30rem] hidden md:block rounded-xl  p-4"/>
           <div className="m-4 space-y-8">
-            <img src={carbonetsLogo} alt="Carbon Removal Challenge presented by" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto p-4"/>
+            <img src={carbonetsLogo} alt="CarbonETS Logo" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto p-4"/>
             <h2 className='text-[1.5rem] lg:text-[2rem] text-white'>{t('carbonetsDescription')}</h2>
           </div>
         </div>
         <div className="relative w-full">
-          <img src="src/assets/DACwBckg.png" alt="New York" className="opacity-40 w-full min-h-[40rem] md:max-h-[40rem] object-cover object-center"/>
+          <img src={DACwBckg} alt="DACC zoomed out" className="opacity-40 w-full min-h-[40rem] md:max-h-[40rem] object-cover object-center"/>
         </div>
       </div>
       <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-green bg-opacity-50 p-4 md:p-0 mb-16'>
-        <img src="src\assets\DACC.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
+        <img src={DACC} alt="DACC" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
         <div className="m-4 space-y-8">
           <h2 className='text-[2rem] lg:text-[3rem]'>{t('titlePrototypeLower')}</h2>
-          <img src="src\assets\DACC.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
+          <img src={DACC} alt="DACC" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
           <p className='text-[1rem] lg:text-[1.5rem] font-medium'>
             {t('prototypeDescription')}
           </p>
@@ -35,18 +40,18 @@ const Home = () => {
       <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-blue bg-opacity-50 p-4 md:p-0 mb-16'>
         <div className="m-4 space-y-8">
           <h2 className='text-[2rem] lg:text-[3rem]'>{t('subtitleMilan')}</h2>
-          <img src="src\assets\Milan.jpg" alt="Earth" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
+          <img src={Milan} alt="Milan Bergeron-Brlek" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
           <p className='text-[1rem] lg:text-[1.5rem] font-medium'>
             {t('milanDescription')}
           </p>
         </div>
-        <img src="src\assets\Milan.jpg" alt="Earth" className="max-h-[20rem] lg:max-h-[30rem] hidden md:block"/>
+        <img src={Milan} alt="Milan Bergeron-Brlek" className="max-h-[20rem] lg:max-h-[30rem] hidden md:block"/>
       </div>
       <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-green bg-opacity-50 p-4 md:p-0 mb-16'>
-        <img src="src\assets\CRCLogoSquare.jpg" alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
+        <img src={CRCLogoSquare} alt="Carbon Removal Challenge Square Logo" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
         <div className="m-4 space-y-8">
           <h2 className='text-[2rem] lg:text-[3rem]'>{t('titleCompetitionLower')}</h2>
-          <img src="src\assets\CRCLogoSquare.jpg" alt="Earth" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
+          <img src={CRCLogoSquare} alt="Carbon Removal Challenge Square Logo" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
           <p className='text-[1rem] lg:text-[1.5rem] font-medium'>
             {t('crcLongDescription')}
           </p>
@@ -58,7 +63,7 @@ const Home = () => {
       <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-blue bg-opacity-50 p-4 md:p-0'>
         <div className="m-4 space-y-8">
           <h2 className='text-[2rem] lg:text-[3rem]'>{t('joinTeam')}</h2>
-          <img src="src\assets\Earth.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
+          <img src={Earth} alt="Earth" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
           <p className='text-[1rem] lg:text-[1.5rem] font-medium'>
             <Trans i18nKey="joinTeamParagraph">
               The world needs you and so do we.<br/>Completing the form below does not commit you to anything, but will allow us to contact you to discuss the opportunities available to you at CarbonETS.
@@ -68,7 +73,7 @@ const Home = () => {
             {t('joinTeamButton')}
           </button>
         </div>
-        <img src="src\assets\Earth.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
+        <img src={Earth} alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
       </div>
     </div>
   )
