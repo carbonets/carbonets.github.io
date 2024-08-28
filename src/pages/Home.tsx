@@ -19,8 +19,9 @@ const Home = () => {
         </div>
       </div>
       <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-green bg-opacity-50 p-4 md:p-0 mb-16'>
+        <img src="src\assets\DACC.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
         <div className="m-4 space-y-8">
-          <h2 className='text-[2rem] lg:text-[3rem]'>{t('titlePrototype')}</h2>
+          <h2 className='text-[2rem] lg:text-[3rem]'>{t('titlePrototypeLower')}</h2>
           <img src="src\assets\DACC.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
           <p className='text-[1rem] lg:text-[1.5rem] font-medium'>
             {t('prototypeDescription')}
@@ -29,7 +30,6 @@ const Home = () => {
             {t('learnMoreButton')}
           </button>
         </div>
-        <img src="src\assets\DACC.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
       </div>
       <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-blue bg-opacity-50 p-4 md:p-0 mb-16'>
         <div className="m-4 space-y-8">
@@ -41,20 +41,20 @@ const Home = () => {
         </div>
         <img src="src\assets\Milan.jpg" alt="Earth" className="max-h-[20rem] lg:max-h-[30rem] hidden md:block"/>
       </div>
-      <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-blue bg-opacity-50 p-4 md:p-0 mb-16'>
+      <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-green bg-opacity-50 p-4 md:p-0 mb-16'>
+        <img src="src\assets\CRCLogoSquare.jpg" alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
         <div className="m-4 space-y-8">
-          <h2 className='text-[2rem] lg:text-[3rem]'>{t('titleCompetition')}</h2>
+          <h2 className='text-[2rem] lg:text-[3rem]'>{t('titleCompetitionLower')}</h2>
           <img src="src\assets\CRCLogoSquare.jpg" alt="Earth" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
           <p className='text-[1rem] lg:text-[1.5rem] font-medium'>
             {t('crcLongDescription')}
           </p>
-          <button className='bg-carbonets-green bg-opacity-70 border-carbonets-green border-solid border-[3px] text-slate-100 hover:text-carbonets-green hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'>
+          <button className='bg-carbonets-blue bg-opacity-70 border-carbonets-blue border-solid border-[3px] text-slate-100 hover:text-carbonets-blue hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'>
             {t('learnMoreButton')}
           </button>
         </div>
-        <img src="src\assets\CRCLogoSquare.jpg" alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
       </div>
-      <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-blue bg-opacity-50 p-4 md:p-0 mb-16'>
+      <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-blue bg-opacity-50 p-4 md:p-0'>
         <div className="m-4 space-y-8">
           <h2 className='text-[2rem] lg:text-[3rem]'>{t('joinTeam')}</h2>
           <img src="src\assets\Earth.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
