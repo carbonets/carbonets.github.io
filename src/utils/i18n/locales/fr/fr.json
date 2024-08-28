@@ -1,4 +1,8 @@
 {
+    "homePageTitle": "Accueil - CarbonETS",
+    "teamPageTitle": "Équipe - CarbonETS",
+    "prototypePageTitle": "Prototype - CarbonETS",
+    "competitionPageTitle": "Compétition - CarbonETS",
     "pageHome": "Accueil",
     "pageTeam": "Équipe",
     "pagePrototype": "Prototype",
