@@ -20,11 +20,11 @@ function App() {
         <BrowserRouter basename='/'>
           <ScrollToTop/>
           <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/team' element={<Team/>} />
-            <Route path='/prototype' element={<Prototype/>} />
-            <Route path='/competition' element={<Competition/>} />
-            <Route path='/404' element={<NotFound/>} />
+            <Route path='' element={<Home/>} />
+            <Route path='team' element={<Team/>} />
+            <Route path='prototype' element={<Prototype/>} />
+            <Route path='competition' element={<Competition/>} />
+            <Route path='404' element={<NotFound/>} />
             <Route path='*' element={<NotFound/>} />
           </Routes>
         </BrowserRouter>
