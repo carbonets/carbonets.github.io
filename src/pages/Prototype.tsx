@@ -10,8 +10,9 @@ const Prototype = () => {
     <>
       <Helmet>
         <title>{t('prototypePageTitle')}</title>
+        <meta name="description" content={t('prototypePageDescription')} />
       </Helmet>
-      <div className='flex flex-col items-center mx-auto font-montserrat text-white font-bold mb-28'>
+      <div className='flex flex-col items-center mx-auto font-montserrat text-white font-bold mb-12'>
         <div className='text-[3rem] sm:text-[5rem] md:text-[8rem] text-center mb-4 text-carbonets-white'>
           {t('titlePrototype')}
         </div>
@@ -92,7 +93,7 @@ const Prototype = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col md:flex-row gap-8 items-center text-center md:text-left max-w-[65rem] p-4 md:p-0 mb-4'>
+        <div className='flex flex-col md:flex-row gap-8 items-center text-center md:text-left max-w-[65rem] p-4 md:p-0'>
           <div className="m-4 space-y-8">
             <h2 className='text-[1.5rem] lg:text-[2.5rem]'>{t('subtitleCO2')}</h2>
             <img src="src\assets\skeleton.png" alt="Calcium Carbonate" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>

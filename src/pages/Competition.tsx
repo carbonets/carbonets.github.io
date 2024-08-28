@@ -10,7 +10,7 @@ const Competition = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
   const slides = [
     "src/assets/Competition1.jpg",
-    "src/assets/Competition2.png",
+    "src/assets/Competition2.jpg",
     "src/assets/Competition3.jpg",
     "src/assets/Competition4.jpg",
     "src/assets/Competition5.jpg",
@@ -50,8 +50,9 @@ const Competition = () => {
     <>
       <Helmet>
         <title>{t('competitionPageTitle')}</title>
+        <meta name="description" content={t('competitionPageDescription')} />
       </Helmet>
-      <div className='flex flex-col items-center mx-auto font-montserrat text-white font-bold mb-28'>
+      <div className='flex flex-col items-center mx-auto font-montserrat text-white font-bold mb-12'>
         <div className='text-[3rem] sm:text-[5rem] md:text-[7.5rem] text-center mb-8 text-carbonets-white'>
           {t('titleCompetition')}
         </div>
@@ -75,7 +76,7 @@ const Competition = () => {
           </div>
           <img src="src/assets/OpenAir.png" alt="Open Air" className="max-h-[25rem] max-w-[25rem] lg:max-w-[30rem] hidden md:block rounded-xl bg-white p-4"/>
         </div>
-        <div className="relative w-full mb-16 overflow-hidden">
+        <div className="relative w-full mb-8 overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{

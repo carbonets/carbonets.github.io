@@ -11,8 +11,9 @@ const Team = () => {
     <>
       <Helmet>
         <title>{t('teamPageTitle')}</title>
+        <meta name="description" content={t('teamPageDescription')} />
       </Helmet>
-      <div className='flex flex-col items-center mx-auto font-montserrat text-white font-bold mb-28'>
+      <div className='flex flex-col items-center mx-auto font-montserrat text-white font-bold mb-12'>
         <div className='text-[3rem] sm:text-[5rem] md:text-[8rem] text-center mb-8 text-carbonets-white'>
           {t('titleTeam')}
         </div>
@@ -39,7 +40,11 @@ const Team = () => {
                 The world needs you and so do we.<br/>Completing the form below does not commit you to anything, but will allow us to contact you to discuss the opportunities available to you at CarbonETS.
               </Trans>
             </p>
-            <button className='bg-carbonets-green bg-opacity-70 border-carbonets-green border-solid border-[3px] text-slate-100 hover:text-carbonets-green hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'>
+            <button className='bg-carbonets-green bg-opacity-70 border-carbonets-green border-solid border-[3px] text-slate-100 hover:text-carbonets-green hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'
+            onClick={() => {
+              window.open('https://noteforms.com/forms/apprendre-a-vous-connaitre-lge24k', '_blank')
+            }}
+            >
               {t('joinTeamButton')}
             </button>
           </div>

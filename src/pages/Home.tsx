@@ -1,6 +1,7 @@
 import { useTranslation, Trans } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 import carbonetsLogo from '../assets/carbonets.png'
-import DACwBckg from '../assets/DACwBckg.png'
+import DACwBckg from '../assets/DACwBckg.jpg'
 import DACC from '../assets/DACC.png'
 import Milan from '../assets/Milan.jpg'
 import CRCLogoSquare from '../assets/CRCLogoSquare.jpg'
@@ -10,11 +11,13 @@ import { Helmet } from 'react-helmet-async'
 const Home = () => {
 
   const { t } = useTranslation()
+  const navigate = useNavigate()
 
   return (
     <>
       <Helmet>
         <title>{t('homePageTitle')}</title>
+        <meta name="description" content={t('homePageDescription')} />
       </Helmet>
       <div className='flex flex-col items-center mx-auto font-montserrat text-white font-bold mb-12'>
         <div className="relative w-full mb-16">
@@ -37,7 +40,10 @@ const Home = () => {
             <p className='text-[1rem] lg:text-[1.5rem] font-medium'>
               {t('prototypeDescription')}
             </p>
-            <button className='bg-carbonets-blue bg-opacity-70 border-carbonets-blue border-solid border-[3px] text-slate-100 hover:text-carbonets-blue hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'>
+            <button
+              className='bg-carbonets-blue bg-opacity-70 border-carbonets-blue border-solid border-[3px] text-slate-100 hover:text-carbonets-blue hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'
+              onClick={() => navigate('/prototype')}
+            >
               {t('learnMoreButton')}
             </button>
           </div>
@@ -60,7 +66,10 @@ const Home = () => {
             <p className='text-[1rem] lg:text-[1.5rem] font-medium'>
               {t('crcLongDescription')}
             </p>
-            <button className='bg-carbonets-blue bg-opacity-70 border-carbonets-blue border-solid border-[3px] text-slate-100 hover:text-carbonets-blue hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'>
+            <button
+              className='bg-carbonets-blue bg-opacity-70 border-carbonets-blue border-solid border-[3px] text-slate-100 hover:text-carbonets-blue hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'
+              onClick={() => navigate('/competition')}
+            >
               {t('learnMoreButton')}
             </button>
           </div>
@@ -74,7 +83,12 @@ const Home = () => {
                 The world needs you and so do we.<br/>Completing the form below does not commit you to anything, but will allow us to contact you to discuss the opportunities available to you at CarbonETS.
               </Trans>
             </p>
-            <button className='bg-carbonets-green bg-opacity-70 border-carbonets-green border-solid border-[3px] text-slate-100 hover:text-carbonets-green hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'>
+            <button
+              className='bg-carbonets-green bg-opacity-70 border-carbonets-green border-solid border-[3px] text-slate-100 hover:text-carbonets-green hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'
+              onClick={() => {
+                window.open('https://noteforms.com/forms/apprendre-a-vous-connaitre-lge24k', '_blank')
+              }}
+            >
               {t('joinTeamButton')}
             </button>
           </div>

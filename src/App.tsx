@@ -8,6 +8,7 @@ import Prototype from './pages/Prototype.tsx';
 import Competition from './pages/Competition.tsx';
 import NotFound from './pages/NotFound.tsx';
 import Footer from './components/Footer.tsx';
+import ScrollToTop from './components/ScrollToTop.tsx';
 
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
       <body className='box-border bg-carbonets-dark min-h-[100vh]'>
         <Navbar/>
         <BrowserRouter basename='/'>
+          <ScrollToTop/>
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/team' element={<Team/>} />

@@ -17,7 +17,6 @@ export default {
       colors: {
         'carbonets-dark': '#303131',
         'carbonets-green': '#50E59D',
-        'carbonets-dark-green': '#06402B',
         'carbonets-blue': '#48CEFF',
       },
     },
