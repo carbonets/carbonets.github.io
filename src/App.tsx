@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar.tsx';
 import Home from './pages/Home.tsx';
 import Team from './pages/Team.tsx';
-import Join from './pages/Join.tsx';
 import Prototype from './pages/Prototype.tsx';
 import Competition from './pages/Competition.tsx';
 import NotFound from './pages/NotFound.tsx';
@@ -20,7 +19,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/team' element={<Team/>} />
-          <Route path='/join' element={<Join/>} />
           <Route path='/prototype' element={<Prototype/>} />
           <Route path='/competition' element={<Competition/>} />
           <Route path='/404' element={<NotFound/>} />

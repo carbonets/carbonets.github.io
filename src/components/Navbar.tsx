@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex flex-col items-center bg-transparent font-semibold font-[sans-serif] text-[0.95rem] mb-6'>
+    <div className='flex flex-col items-center bg-transparent font-semibold font-[sans-serif] text-[0.95rem]'>
       <div className='flex w-full tracking-wide shadow-lg min-h-[4.5rem] max-w-[80rem] justify-center'>
         <div className='hidden navbar-size:flex gap-5 justify-end items-center flex-1'>
           <a href='/team' className='text-white hover:text-carbonets-green'>
@@ -35,15 +35,12 @@ const Navbar = () => {
         </div>
         <div className='flex flex-1 mx-4 navbar-size:justify-center items-center'>
           <a href='/'>
-            <img src={carbonLogo} alt='Carbon ÉTS' className='h-[3.5rem]'/>
+            <img src={carbonLogo} alt='CarbonETS' className='h-[3.5rem]'/>
           </a>
         </div>
         <div className='hidden navbar-size:flex gap-5 justify-start items-center flex-1'>
           <a href='/competition' className='text-white hover:text-carbonets-green'>
             {t('pageCompetition')}
-          </a>
-          <a href='/join' className='text-white hover:text-carbonets-green'>
-            {t('pageJoin')}
           </a>
           <button onClick={handleLanguage} className='px-4 py-2 text-sm rounded-3xl font-bold border-2 border-carbonets-green opacity-90 bg-carbonets-green transition-all ease-in-out duration-300 hover:bg-transparent text-carbonets-dark hover:text-carbonets-green'>
             {isEnglish ? 'FR' : 'EN'}
@@ -73,9 +70,6 @@ const Navbar = () => {
         </a>
         <a href='/competition' className='text-white hover:text-carbonets-green'>
           {t('pageCompetition')}
-        </a>
-        <a href='/join' className='text-white hover:text-carbonets-green'>
-          {t('pageJoin')}
         </a>
         <button onClick={() => {handleLanguage(); toggleMenu();}} className='px-4 py-2 text-sm rounded-3xl font-bold border-2 border-carbonets-green opacity-90 bg-carbonets-green transition-all ease-in-out duration-300 hover:bg-transparent text-carbonets-dark hover:text-carbonets-green'>
           {isEnglish ? 'FR' : 'EN'}

@@ -1,4 +1,3 @@
-import CallToAction from '../components/CallToAction'
 import Member from '../components/Member'
 import { useTranslation } from 'react-i18next'
 import { Trans } from 'react-i18next';
@@ -15,9 +14,9 @@ const Team = () => {
       <div className='md:flex md:space-x-8 space-y-8 mb-16 justify-center'>
         <div className='flex justify-center'>
           <Member 
-            role="Technical Director" 
+            role='roleTechnicalDirector'
             name="Daniel Danaie" 
-            concentration="ele" 
+            concentration='ele'
             imageSrc="src\assets\members\DanielDanaie.png"
             linkedin="https://www.linkedin.com/in/danieldanaie/"
           />
@@ -32,7 +31,7 @@ const Team = () => {
           <img src="src\assets\Earth.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
           <p className='text-[1rem] lg:text-[1.5rem] font-medium'>
             <Trans i18nKey="joinTeamParagraph">
-              The world needs you and so do we.<br/>Completing the form below does not commit you to anything, but will allow us to contact you to discuss the opportunities available to you at Carbon ÉTS.
+              The world needs you and so do we.<br/>Completing the form below does not commit you to anything, but will allow us to contact you to discuss the opportunities available to you at CarbonETS.
             </Trans>
           </p>
           <button className='bg-carbonets-green bg-opacity-70 border-carbonets-green border-solid border-[3px] text-slate-100 hover:text-carbonets-green hover:bg-slate-600 py-2 px-4 rounded text-[1.5rem]'>
