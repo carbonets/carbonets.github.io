@@ -2,6 +2,17 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 
+import Competition1 from '../assets/Competition1.jpg';
+import Competition2 from '../assets/Competition2.jpg';
+import Competition3 from '../assets/Competition3.jpg';
+import Competition4 from '../assets/Competition4.jpg';
+import Competition5 from '../assets/Competition5.jpg';
+import Competition6 from '../assets/Competition6.jpg';
+
+import CRCLogo from '../assets/CRCLogo.png';
+import OpenAir from '../assets/OpenAir.png';
+import NewYork from '../assets/NewYork.jpg';
+
 const Competition = () => {
 
   const { t } = useTranslation();
@@ -9,12 +20,12 @@ const Competition = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(3);
   const slides = [
-    "src/assets/Competition1.jpg",
-    "src/assets/Competition2.jpg",
-    "src/assets/Competition3.jpg",
-    "src/assets/Competition4.jpg",
-    "src/assets/Competition5.jpg",
-    "src/assets/Competition6.jpg"
+    Competition1,
+    Competition2,
+    Competition3,
+    Competition4,
+    Competition5,
+    Competition6,
   ];
 
   useEffect(() => {
@@ -58,23 +69,23 @@ const Competition = () => {
         </div>
         <div className="relative w-full mb-16">
           <div className="absolute inset-0 flex flex-col md:flex-row gap-8 items-center justify-center text-center md:text-left max-w-[65rem] p-4 md:p-0 mb-4 z-10 left-1/2 transform -translate-x-1/2">
-            <img src="src/assets/CRCLogo.png" alt="Carbon Removal Challenge" className="max-h-[25rem] max-w-[25rem] lg:max-w-[30rem] hidden md:block rounded-xl bg-white p-4"/>
+            <img src={CRCLogo} alt="Carbon Removal Challenge" className="max-h-[25rem] max-w-[25rem] lg:max-w-[30rem] hidden md:block rounded-xl bg-white p-4"/>
             <div className="m-4 space-y-8">
-              <img src="src/assets/CRCLogo.png" alt="Carbon Removal Challenge" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto bg-white p-4"/>
+              <img src={CRCLogo} alt="Carbon Removal Challenge" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto bg-white p-4"/>
               <h2 className='text-[1.5rem] lg:text-[2rem] text-white'>{t('crcDescription')}</h2>
             </div>
           </div>
           <div className="relative w-full">
-            <img src="src/assets/NewYork.jpg" alt="New York" className="opacity-40 w-full min-h-[40rem] md:max-h-[40rem] object-cover object-bottom"/>
+            <img src={NewYork} alt="New York" className="opacity-40 w-full min-h-[40rem] md:max-h-[40rem] object-cover object-bottom"/>
           </div>
         </div>
         <div className='flex flex-col md:flex-row gap-8 items-center text-center md:text-left max-w-[65rem] p-4 md:p-0 mb-20'>
           <div className="m-4 space-y-8">
-            <img src="src/assets/OpenAir.png" alt="Open Air" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto bg-white p-4"/>
+            <img src={OpenAir} alt="Open Air" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto bg-white p-4"/>
             <h2 className='text-[1.5rem] lg:text-[2rem]'>{t('subtitleOrganizers')}</h2>
             <p className='text-[1rem] lg:text-[1.5rem] font-normal'>{t('paragraphOrganizers')}</p>
           </div>
-          <img src="src/assets/OpenAir.png" alt="Open Air" className="max-h-[25rem] max-w-[25rem] lg:max-w-[30rem] hidden md:block rounded-xl bg-white p-4"/>
+          <img src={OpenAir} alt="Open Air" className="max-h-[25rem] max-w-[25rem] lg:max-w-[30rem] hidden md:block rounded-xl bg-white p-4"/>
         </div>
         <div className="relative w-full mb-8 overflow-hidden">
           <div

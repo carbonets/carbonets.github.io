@@ -3,6 +3,9 @@ import { useTranslation } from 'react-i18next'
 import { Trans } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 
+import DanielDanaie from '../assets/members/DanielDanaie.png'
+import Earth from '../assets/Earth.png'
+
 const Team = () => {
 
   const { t } = useTranslation();
@@ -23,7 +26,7 @@ const Team = () => {
               role='roleTechnicalDirector'
               name="Daniel Danaie" 
               concentration='ele'
-              imageSrc="src\assets\members\DanielDanaie.png"
+              imageSrc={DanielDanaie}
               linkedin="https://www.linkedin.com/in/danieldanaie/"
             />
           </div>
@@ -48,7 +51,7 @@ const Team = () => {
               {t('joinTeamButton')}
             </button>
           </div>
-          <img src="src\assets\Earth.png" alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
+          <img src={Earth} alt="Earth" className="max-h-[20rem] max-w-[20rem] lg:max-h-[30rem] lg:max-w-[30rem] hidden md:block"/>
         </div>
       </div>
     </>
