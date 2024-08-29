@@ -17,7 +17,7 @@ function App() {
     <HelmetProvider>
       <body className='box-border bg-carbonets-dark min-h-[100vh]'>
         <Navbar/>
-        <BrowserRouter basename='./'>
+        <BrowserRouter basename='/'>
           <ScrollToTop/>
           <Routes>
             <Route path='' element={<Home/>} />
