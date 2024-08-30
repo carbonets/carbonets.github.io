@@ -21,13 +21,13 @@ const Footer = () => {
                         <a href='/' className='hover:text-carbonets-green mb-2'>
                             {t("pageHome")}
                         </a>
-                        <a href='/team' className='hover:text-carbonets-green mb-2'>
+                        <a href='#/team' className='hover:text-carbonets-green mb-2'>
                             {t("pageTeam")}
                         </a>
-                        <a href='/prototype' className='hover:text-carbonets-green mb-2'>
+                        <a href='#/prototype' className='hover:text-carbonets-green mb-2'>
                             {t("pagePrototype")}
                         </a>
-                        <a href='/competition' className='hover:text-carbonets-green'>
+                        <a href='#/competition' className='hover:text-carbonets-green'>
                             {t("pageCompetition")}
                         </a>
                     </div>
