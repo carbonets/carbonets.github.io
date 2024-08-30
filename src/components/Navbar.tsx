@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className='flex flex-col items-center bg-transparent font-semibold font-[sans-serif] text-[0.95rem]'>
       <div className='flex w-full tracking-wide shadow-lg min-h-[4.5rem] max-w-[80rem] justify-center'>
         <div className='hidden navbar-size:flex gap-5 justify-end items-center flex-1'>
-          <a href='/team' className='text-white hover:text-carbonets-green'>
+          <a href='#/team' className='text-white hover:text-carbonets-green'>
             {t('pageTeam')}
           </a>
           <a href='/prototype' className='text-white hover:text-carbonets-green'>
