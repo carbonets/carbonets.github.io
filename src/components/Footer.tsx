@@ -61,8 +61,8 @@ const Footer = () => {
             <div className='flex w-full text-white text-[0.8rem] font-[sans-serif] justify-center p-4 mt-4'>
                 {t("footerText")}
             </div>
-            <div className='mb-4 md:ml-6 md:hidden'>
-                <img src={ets} alt='ÉTS' className='h-[7.5rem] mx-auto m-4' />
+            <div className='md:ml-6 md:hidden'>
+                <img src={ets} alt='ÉTS' className='h-[7.5rem] mx-auto p-4' />
             </div>
         </>
     )
