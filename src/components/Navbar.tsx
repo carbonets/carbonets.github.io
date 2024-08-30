@@ -17,7 +17,7 @@ const Navbar = () => {
     const newLanguage = isEnglish ? 'fr' : 'en';
     i18n.changeLanguage(newLanguage);
     setIsEnglish(!isEnglish);
-    localStorage.setItem('language', newLanguage); // Save the new language to localStorage
+    localStorage.setItem('language', newLanguage);
   };
 
   return (
