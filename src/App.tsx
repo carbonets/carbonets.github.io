@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
 import Navbar from './components/Navbar.tsx';
@@ -17,7 +17,7 @@ function App() {
     <HelmetProvider>
       <body className='box-border bg-carbonets-dark min-h-[100vh]'>
         <Navbar/>
-        <HashRouter>
+        <BrowserRouter>
           <ScrollToTop/>
           <Routes>
             <Route path='' element={<Home/>} />
@@ -27,7 +27,7 @@ function App() {
             <Route path='404' element={<NotFound/>} />
             <Route path='*' element={<NotFound/>} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
         <Footer/>
       </body>
     </HelmetProvider>
