@@ -67,7 +67,7 @@ const Prototype = () => {
             <img src={CFD} alt="Airflow" className="max-h-[20rem] max-w-[20rem] rounded-xl md:hidden mx-auto"/>
             <p className='text-[1rem] lg:text-[1.5rem] font-light'>
               <Trans i18nKey="paragraphAirflow">
-                Due to an extremely low percentage of CO₂ in the atmosphere of approximately <span className="font-bold">0.4%</span>, airflow to the sorbent is key and optimization of <span className="font-bold">energy efficiency and speed</span> to get the sorbent close to saturation is one of our main goals.
+                Due to an extremely low percentage of CO₂ in the atmosphere of approximately <span className="font-bold">0.04%</span>, airflow to the sorbent is key and optimization of <span className="font-bold">energy efficiency and speed</span> to get the sorbent close to saturation is one of our main goals.
               </Trans>
             </p>
           </div>

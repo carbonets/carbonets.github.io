@@ -54,7 +54,7 @@
     "subtitleDesorptionProcess": "Le Processus de Désorption",
     "paragraphDesorptionProcess": "Une fois que le sorbant commence à ralentir son taux de capture, signifiant que le sorbant atteint la saturation, il est temps d'injecter de <1>l'énergie</1> sous une forme quelconque afin de <3>briser les liens</3> et capturer le CO₂.",
     "subtitleAirflow": "Optimisation du Flux d'Air",
-    "paragraphAirflow": "En raison d'un pourcentage extrêmement faible de CO₂ dans l'atmosphère, environ <1>0,4%</1>, le flux d'air vers le sorbant est essentiel et l'optimisation de <3>l'efficacité énergétique et de la vitesse</3> pour amener le sorbant près de la saturation est l'un de nos principaux objectifs.",
+    "paragraphAirflow": "En raison d'un pourcentage extrêmement faible de CO₂ dans l'atmosphère, environ <1>0,04%</1>, le flux d'air vers le sorbant est essentiel et l'optimisation de <3>l'efficacité énergétique et de la vitesse</3> pour amener le sorbant près de la saturation est l'un de nos principaux objectifs.",
     "subtitleSensors": "Capteurs Fiables",
     "paragraphSensors": "Les capteurs de CO₂ sont difficiles à trouver à bas prix, et les moins chers sont peu fiables en raison de facteurs tels que <1>le flux d'air incohérent</1> dans la zone de détection et la <3>complexité de l'étalonnage</3>. Ils sont essentiels pour comprendre la quantité de carbone capturée. Un <5>ensemble de capteurs personnalisé</5> doit être mis en place.",
     "subtitleEnergy": "Énergie Propre",

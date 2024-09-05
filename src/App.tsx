@@ -15,7 +15,7 @@ import './App.css';
 function App() {
   return (
     <HelmetProvider>
-      <body className='box-border bg-carbonets-dark min-h-[100vh]'>
+       <body className='box-border bg-carbonets-dark min-h-[100vh]'>
         <Navbar/>
         <HashRouter>
           <ScrollToTop/>

@@ -54,7 +54,7 @@
     "subtitleDesorptionProcess": "The Desorption Process",
     "paragraphDesorptionProcess": "Once the sorbent starts to slow down its rate of capture meaning that the sorbent is reaching saturation, it is time to inject <1>energy</1> in some form in order to <3>break the bonds</3> and capture the CO₂.",
     "subtitleAirflow": "Airflow Optimization",
-    "paragraphAirflow": "Due to an extremely low percentage of CO₂ in the atmosphere of approximately <1>0.4%</1>, airflow to the sorbent is key and optimization of <3>energy efficiency and speed</3> to get the sorbent close to saturation is one of our main goals.",
+    "paragraphAirflow": "Due to an extremely low percentage of CO₂ in the atmosphere of approximately <1>0.04%</1>, airflow to the sorbent is key and optimization of <3>energy efficiency and speed</3> to get the sorbent close to saturation is one of our main goals.",
     "subtitleSensors": "Reliable Sensors",
     "paragraphSensors": "CO₂ sensors are hard to find at low price and the cheaper ones are unreliable because of factors such as <1>inconsistent airflow</1> to the sensing area and <3>calibration complexity</3>. They are key to understanding how much carbon has been captured. A <5>custom sensor package</5> needs to be implemented.",
     "subtitleEnergy": "Clean Energy",
