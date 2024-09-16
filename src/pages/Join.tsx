@@ -1,7 +1,7 @@
 
 const Join = () => {
   return (
-    <div>Join</div>
+    <div>Join Us</div>
   )
 }
 
