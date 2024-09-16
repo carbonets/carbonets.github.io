@@ -39,7 +39,7 @@ const Team = () => {
             linkedin="https://www.linkedin.com/in/rejeena-r-sebastian-717a061a9"
           />
           <Member 
-            role='roleTechnicalDirector'
+            role='roleMember'
             name="Samuel Beausoleil" 
             concentration='log'
             imageSrc={Samuel}
