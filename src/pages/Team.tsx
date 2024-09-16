@@ -4,6 +4,9 @@ import { Trans } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 
 import DanielDanaie from '../assets/members/DanielDanaie.png'
+import Rejeena from '../assets/members/Rejeena.jpg'
+import Samuel from '../assets/members/Samuel.jpg'
+import Mael from '../assets/members/Mael.jpg'
 import Earth from '../assets/Earth.png'
 
 const Team = () => {
@@ -20,19 +23,35 @@ const Team = () => {
         <div className='text-[3rem] sm:text-[5rem] md:text-[8rem] text-center mb-8 text-carbonets-white'>
           {t('titleTeam')}
         </div>
-        <div className='md:flex md:space-x-8 space-y-8 mb-16 justify-center'>
-          <div className='flex justify-center'>
-            <Member 
-              role='roleTechnicalDirector'
-              name="Daniel Danaie" 
-              concentration='ele'
-              imageSrc={DanielDanaie}
-              linkedin="https://www.linkedin.com/in/danieldanaie/"
-            />
-          </div>
-          <div className='text-center md:block text-[2.2rem] text-carbonets-green text-opacity-90 md:place-content-center max-w-[35rem]'>
-            {t('funnyTeamMessage')}
-          </div>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-4 justify-items-center mx-auto max-w-[1000px]'>
+          <Member 
+            role='roleCaptain'
+            name="Daniel Danaie" 
+            concentration='ele'
+            imageSrc={DanielDanaie}
+            linkedin="https://www.linkedin.com/in/danieldanaie/"
+          />
+          <Member 
+            role='roleMember'
+            name="Rejeena Sebastian" 
+            concentration='eleResearch'
+            imageSrc={Rejeena}
+            linkedin="https://www.linkedin.com/in/rejeena-r-sebastian-717a061a9"
+          />
+          <Member 
+            role='roleTechnicalDirector'
+            name="Samuel Beausoleil" 
+            concentration='log'
+            imageSrc={Samuel}
+            linkedin="https://www.linkedin.com/in/samuel-beausoleil-317b28160/"
+          />
+          <Member 
+            role='roleMember'
+            name="Mael Casagrande" 
+            concentration='gpa'
+            imageSrc={Mael}
+            linkedin="https://www.linkedin.com/in/ma%C3%ABl-casagrande-38487a295/"
+          />
         </div>
         <div className='flex flex-col md:flex-row gap-8 md:rounded-xl md:shadow-lg overflow-hidden items-center text-center max-w-[65rem] bg-carbonets-blue bg-opacity-50 p-4 md:p-0'>
           <div className="m-4 space-y-8">

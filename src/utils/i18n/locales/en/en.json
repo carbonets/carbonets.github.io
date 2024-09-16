@@ -32,6 +32,8 @@
     "roleLogistics": "Logistics Team",
     "roleMarketingChief": "Marketing Chief",
     "roleMarketing": "Marketing Team",
+    "roleMember": "Member",
+    "eleResearch": "electrical engineering researcher",
     "ele": "electrical engineering",
     "mec": "mechanical engineering",
     "chem": "chemical engineering",
